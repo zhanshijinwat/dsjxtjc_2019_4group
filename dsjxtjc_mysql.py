@@ -2,11 +2,7 @@ import pymysql
 import pandas as pd
 import numpy as np
 import time
-create_table_order = "CREATE TABLE EMPLOYEE (FIRST_NAME  CHAR(20) NOT NULL,LAST_NAME  CHAR(20),AGE INT,  SEX CHAR(1),INCOME FLOAT);"
-insert_order = """INSERT INTO EMPLOYEE(FIRST_NAME,LAST_NAME, AGE, SEX, INCOME) VALUES ('%s', '%s', '%s', '%s', %s )""" % ('Mac', 'Mohan', 20, 'M', 2000)
-insert_order2 = """INSERT INTO EMPLOYEE(FIRST_NAME) VALUES ('%s')""" % ('Mac'),
-change_order =  "UPDATE EMPLOYEE SET AGE = 1 WHERE SEX = '%c'" % ('M')  #sex为'M'的AGE变成30"
-change_order2 = "UPDATE EMPLOYEE SET AGE = 1" # 改所有的"
+
 class mmySQL:
     def __init__(self,hosts_= None,user_ = None,pass_word_=None,
                  database_= None,table_ = None,charset_='utf8'):

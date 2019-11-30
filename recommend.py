@@ -41,7 +41,7 @@ class Recommend():
 
 
 if __name__ == '__main__':
-    '''test_set_i = set(['20202', '81383', '20201', '10101', '40402', '30314', '30312', '30311', '50507', '30313'])
+    test_set_i = set(['20202', '81383', '20201', '10101', '40402', '30314', '30312', '30311', '50507', '30313'])
     test_set_j = set(['30314', '30312', '30311', '50507', '30313', '60601', '40401', '50514', '81474', '30310'])
     recommend_obj = Recommend('./tables/similarity_matrix.csv')
-    recommend_list = recommend_obj.get_recommend_list(test_set_i)'''
+    recommend_list = recommend_obj.get_recommend_list(test_set_i)
